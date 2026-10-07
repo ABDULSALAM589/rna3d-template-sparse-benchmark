@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+conda-env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+token*
+
+# Model weights / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+checkpoints/
+weights/
+
+# Large scientific data
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.tar
+*.tar.gz
+*.zip
+databases/
+downloads/
+
+# Bulk predictions / generated structures
+predictions/**/*.pdb
+predictions/**/*.cif
+predictions/**/*.mmcif
+predictions/**/*.npz
+predictions/**/*.npy
+
+# Raw large structures
+data/**/*.pdb
+data/**/*.cif
+data/**/*.mmcif
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+.cache/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Keep placeholder files
+!.gitkeep
