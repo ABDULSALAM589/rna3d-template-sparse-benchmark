@@ -1,43 +1,16 @@
 # DRfold
 
-## Setup Status
+Status: **READY** — official bundled example verified successfully on Google Colab.
 
-**Status:** Not started
+Verified run:
+- upstream commit: `9586990c79e4ca488e5f967fcc8bd5b06cd60273`
+- final structure: `DPR.pdb`
+- exit code: `0`
+- runtime: `5669.692 s`
+- peak observed GPU memory: `1395 MiB`
+- GPU: Tesla T4
+- bundled target length: `77 nt`
 
-## Upstream
+Primary input is RNA FASTA only. PETfold + ViennaRNA features are generated internally.
 
-- Repository:
-- Paper / DOI:
-- Version / commit:
-
-## Environment
-
-- Python:
-- CUDA:
-- GPU:
-- Environment file:
-
-## Required Inputs
-
-- Sequence:
-- MSA:
-- Secondary structure:
-- Base-pair information:
-- Templates:
-- External databases:
-
-## Inference
-
-Document the exact reproducible inference command here.
-
-## Pilot Test
-
-- Target:
-- Successful:
-- Runtime:
-- Peak VRAM:
-- Output path:
-
-## Notes
-
-Record model-specific limitations, preprocessing assumptions, and benchmark eligibility decisions here.
+Notebook: `notebooks/drfold_colab.ipynb`
