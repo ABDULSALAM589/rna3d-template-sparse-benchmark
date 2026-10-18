@@ -68,6 +68,10 @@ Compute
 
 Final inclusion in the full benchmark depends on reproducibility, code availability, compatibility with benchmark targets, and computational feasibility.
 
+## NuFold 10-Target Pilot
+
+The resume-safe batch inference, evaluation, and Colab launcher are documented in [`models/nufold/pilot_batch.md`](models/nufold/pilot_batch.md). The pipeline reads only the externally supplied frozen pilot manifest (kept out of the automation commit as dataset content), writes artifacts to a run-ID directory, labels single-sequence A3M baselines separately from genuine MSAs, and keeps native coordinates out of inference inputs.
+
 ## Benchmark Principles
 
 1. Experimental native 3D structures are used as evaluation ground truth only.

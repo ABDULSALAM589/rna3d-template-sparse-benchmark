@@ -1,0 +1,13 @@
+{
+  "manifest": "data/pilot/rna3d_template_sparse_pilot_v1.csv",
+  "native_eval_dir": "data/pilot/native_eval",
+  "nufold_root": "/content/NuFold",
+  "checkpoint": "/content/NuFold/checkpoints/global_step145245.pt",
+  "ipknot": "/content/ipknot",
+  "usalign": "/usr/local/bin/USalign",
+  "run_root": "/content/drive/MyDrive/RNA3D_Benchmark/NuFold/runs",
+  "msa_mode": "single_sequence",
+  "msa_source_dir": null,
+  "python": "python",
+  "config_preset": "initial_training"
+}
