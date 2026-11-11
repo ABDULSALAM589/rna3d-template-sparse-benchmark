@@ -1,0 +1,11 @@
+target_id,status,sequence_nucleotides,predicted_residues,runtime_seconds,model_commit,inference_mode,device,accuracy_evaluation
+8ubd_H,complete,36,36,558.721,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
+9fia_bJ,complete,71,71,1113.426,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
+9cfn_B,complete,59,59,976.641,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
+9m31_B,complete,51,51,857.996,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
+9g4p_B,complete,33,33,626.177,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
+9lq7_K,complete,49,49,683.337,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
+8z8u_B,complete,41,41,615.522,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
+9g6k_lB,complete,45,45,1056.668,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
+9cf2_W,complete,61,61,995.859,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
+8wf8_B,complete,66,66,1864.764,3667d6ac44c5b14cff94c36e0371224acb2cdae5,upstream_default_single_output,Tesla T4,pending
