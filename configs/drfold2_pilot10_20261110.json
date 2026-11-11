@@ -1,0 +1,38 @@
+{
+  "experiment_id": "drfold2_pilot10_20261110_v1",
+  "model": "DRfold2",
+  "upstream": "https://github.com/leeyang/DRfold2",
+  "model_commit": "3667d6ac44c5b14cff94c36e0371224acb2cdae5",
+  "input_condition": "single_sequence_fasta",
+  "inference_command": "python DRfold_infer.py <input_fasta> <output_dir>",
+  "selection": "upstream_default_single_output_relax/model_1.pdb",
+  "target_ids": [
+    "8ubd_H",
+    "9fia_bJ",
+    "9cfn_B",
+    "9m31_B",
+    "9g4p_B",
+    "9lq7_K",
+    "8z8u_B",
+    "9g6k_lB",
+    "9cf2_W",
+    "8wf8_B"
+  ],
+  "input_root": "/content/drive/MyDrive/RNA3D_Benchmark/NuFold/runs/pilot10_single_20261018T203832Z/inputs",
+  "native_root": "/content/drive/MyDrive/RNA3D_Benchmark/native/pilot_v1/native_eval",
+  "drive_output_root": "/content/drive/MyDrive/RNA3D_Benchmark/DRfold2/runs/drfold2_pilot10_20261110_v1",
+  "notebook": "notebooks/drfold2_pilot10_batch_colab.ipynb",
+  "inference_status": "10/10 complete",
+  "accuracy_evaluation_status": "pending",
+  "hardware": {
+    "gpu": "Tesla T4",
+    "torch": "2.14.1+cu130",
+    "observed_in_completion_records": true
+  },
+  "output_rule": "Each target has model_1.pdb, inference.log, complete.json; completed records validated via SHA256 and PDB sanity checks.",
+  "limitations": [
+    "Native reference structures have missing coordinates for some RNA residues; standardized mapping is required before scoring.",
+    "Checkpoint subcomponent hashes and peak GPU memory were not collected for this batch; model repository commit and per-target output hashes were recorded.",
+    "This is a 10-target pilot, not a finalized large-scale template-sparse comparison."
+  ]
+}
