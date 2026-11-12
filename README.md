@@ -72,6 +72,10 @@ Final inclusion in the full benchmark depends on reproducibility, code availabil
 
 The resume-safe batch inference, evaluation, and Colab launcher are documented in [`models/nufold/pilot_batch.md`](models/nufold/pilot_batch.md). The pipeline reads only the externally supplied frozen pilot manifest (kept out of the automation commit as dataset content), writes artifacts to a run-ID directory, labels single-sequence A3M baselines separately from genuine MSAs, and keeps native coordinates out of inference inputs.
 
+## Three-model exploratory pilot (November 2026)
+
+NuFold, DRfold2, and **RhoFold+ (single-sequence quick-reference condition)** have **10/10 completed predictions and native-mapped structural scores** on the same pilot targets. The RhoFold+ evaluation also reproduces both earlier models' scores (10/10 calibrations each). For provenance, scored CSV snapshots and caveats see [the three-model pilot report](docs/RHOFOLDPLUS_PILOT10_THREE_MODEL_EVALUATION.md). This is **not** a finalized full-MSA or template-sparsity comparison.
+
 ## Benchmark Principles
 
 1. Experimental native 3D structures are used as evaluation ground truth only.
@@ -110,4 +114,4 @@ The resume-safe batch inference, evaluation, and Colab launcher are documented i
 
 ## Status
 
-**FYP-I execution phase — benchmark foundation, model setup, and pilot preparation.**
+**FYP-I exploratory execution phase — three models scored on ten pilot targets; template-sparsity controls, expanded cohort, and full-MSA conditions remain pending.**

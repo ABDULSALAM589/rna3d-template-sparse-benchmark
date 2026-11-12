@@ -66,3 +66,12 @@ Primary benchmark mode is FASTA + standardized/precomputed A3M. Sequence-only mo
 - [x] Custom A3M workflow prepared
 - [x] Sequence-only ablation workflow prepared
 - [ ] Final benchmark MSA-generation policy standardized
+
+## Completed 10-Target Exploratory Pilot (November 2026)
+
+- **10/10** single-sequence quick-reference predictions saved and checksum-verified; `--single_seq_pred True --relax_steps 1000`.
+- **10/10** native-mapped structural evaluations with US-align v20260527; both NuFold and DRfold2 golden calibrations passed 10/10.
+- [Experiment, three-model paired scores, limitations, and follow-up](../../docs/RHOFOLDPLUS_PILOT10_THREE_MODEL_EVALUATION.md)
+- [Resumable inference notebook](../../notebooks/rhofoldplus_pilot10_batch_colab.ipynb) and [CPU-only evaluation notebook](../../notebooks/rhofoldplus_pilot10_evaluation_three_model_colab.ipynb).
+
+**Interpretation:** these results are **not** a full-MSA RhoFold+ benchmark or a final template-sparsity claim. Historical bundled smoke-test results above are a separate run.

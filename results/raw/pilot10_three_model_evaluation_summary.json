@@ -1,0 +1,83 @@
+{
+  "evaluation_id": "rhofoldplus_threeway_usalign20260527_20261112_v1",
+  "created_utc": "2026-11-12T17:45:08.385406+00:00",
+  "source_runs": {
+    "nufold": "pilot10_single_20261018T203832Z",
+    "drfold2": "drfold2_pilot10_20261110_v1",
+    "rhofoldplus": "rhofoldplus_pilot10_single_relax1000_20261111_v1"
+  },
+  "source_drfold2_evaluation": "drfold2_vs_nufold_usalign20260527_20261111_v1",
+  "pinned_mapping_project_commit": "c79a78b0a35be00a31aadeb04a6ebec5f2a0004f",
+  "usalign_tag": "20260527",
+  "usalign_source_commit": "177cc8a2bbd3e2a6e9c5faaaa4ff5dfa1e6048f7",
+  "usalign_binary_sha256": "133e689983edce1bbe3e7dfd52b514b7a83046a486ca1de041905e5490a75178",
+  "usalign_command": "USalign <mapped_prediction> <native> -mol RNA -TMscore 1",
+  "tm_score_normalization": "Structure_2 (experimental native)",
+  "reference_policy": "Observed native target positions only",
+  "model_details": {
+    "nufold": "NuFold rank-1, single-record A3M + predicted IPknot SS",
+    "drfold2": "DRfold2 upstream default single-output sequence-only FASTA",
+    "rhofoldplus": "RhoFold+ single_sequence_quick_reference, MSA depth 1, relaxed_1000_model.pdb",
+    "rhofoldplus_commit": "6bdfbda720184409eb682ce08c05d258162ddc48",
+    "rhofoldplus_checkpoint_sha256": "3adb621978dfcd7ea0dc0edeb520d249f423d61530df85ff58a1fad2f33e5608",
+    "drfold2_commit": "3667d6ac44c5b14cff94c36e0371224acb2cdae5"
+  },
+  "counts": {
+    "targets_scored": 10,
+    "nufold_calibration_pass": 10,
+    "drfold2_calibration_pass": 10
+  },
+  "summary": {
+    "all_ten_exploratory": {
+      "n": 10,
+      "nufold_rank1": {
+        "mean_tm_score": 0.222836,
+        "median_tm_score": 0.24423,
+        "mean_rmsd_angstrom": 18.337,
+        "median_rmsd_angstrom": 17.08
+      },
+      "drfold2": {
+        "mean_tm_score": 0.234494,
+        "median_tm_score": 0.234315,
+        "mean_rmsd_angstrom": 17.593,
+        "median_rmsd_angstrom": 17.03
+      },
+      "rhofoldplus_single": {
+        "mean_tm_score": 0.18479,
+        "median_tm_score": 0.19321,
+        "mean_rmsd_angstrom": 18.622,
+        "median_rmsd_angstrom": 18.78
+      }
+    },
+    "native_observed_fraction_ge_0p80": {
+      "n": 8,
+      "nufold_rank1": {
+        "mean_tm_score": 0.2317475,
+        "median_tm_score": 0.24930000000000002,
+        "mean_rmsd_angstrom": 16.56875,
+        "median_rmsd_angstrom": 17.08
+      },
+      "drfold2": {
+        "mean_tm_score": 0.23865625,
+        "median_tm_score": 0.234315,
+        "mean_rmsd_angstrom": 19.39875,
+        "median_rmsd_angstrom": 17.03
+      },
+      "rhofoldplus_single": {
+        "mean_tm_score": 0.1938225,
+        "median_tm_score": 0.207745,
+        "mean_rmsd_angstrom": 17.70375,
+        "median_rmsd_angstrom": 18.78
+      }
+    },
+    "caveat": "Exploratory, 10 targets only; RhoFold+ single-sequence mode is not its full MSA method; candidate selection differs; incomplete native coordinates affect assessment."
+  },
+  "limitations": [
+    "Pilot results only. Model inference was not repeated.",
+    "RhoFold+ single-sequence is not its full MSA benchmark condition.",
+    "Training-data overlap and structural-template scarcity require separate analysis.",
+    "Models have different input and output-selection policies.",
+    "Some native structures lack coordinates for substantial sequence fractions.",
+    "Native-alignment coverage 100% does not imply 100% native coordinate availability."
+  ]
+}

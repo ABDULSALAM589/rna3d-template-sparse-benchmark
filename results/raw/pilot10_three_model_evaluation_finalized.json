@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "evaluation_id": "rhofoldplus_threeway_usalign20260527_20261112_v1",
+  "created_utc": "2026-11-12T17:45:08.815887+00:00",
+  "files": {
+    "rhofoldplus_scores.csv": "22a33302e351054401ef7c1f409980495d399289db84a84be02b779e116a7669",
+    "three_model_paired.csv": "8a4c04a032ffcfad2798cb9bf1138d51c016635344abec129960c495d24166f1",
+    "nufold_calibration.csv": "089964aa658b1ecddbee6a5a1077af608b8ab236af3c370fe9222359cd102d67",
+    "drfold2_calibration.csv": "84f14e05943ad439f4c56e8611e181b34956d6860d2b8766dbdc41feac99e26d",
+    "summary.json": "3b800ec99128a43aacabd096c18cff0c600027990bdf155f215bd43060e9703e"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "experiment_id": "rhofoldplus_pilot10_single_relax1000_20261111_v1",
+  "status": "inference_complete_10_of_10",
+  "type": "exploratory_sequence_only_pilot_not_full_msa_benchmark",
+  "upstream_repo": "https://github.com/ml4bio/RhoFold",
+  "upstream_commit": "6bdfbda720184409eb682ce08c05d258162ddc48",
+  "checkpoint_sha256": "3adb621978dfcd7ea0dc0edeb520d249f423d61530df85ff58a1fad2f33e5608",
+  "target_ids": [
+    "8ubd_H",
+    "9fia_bJ",
+    "9cfn_B",
+    "9m31_B",
+    "9g4p_B",
+    "9lq7_K",
+    "8z8u_B",
+    "9g6k_lB",
+    "9cf2_W",
+    "8wf8_B"
+  ],
+  "input_root": "MyDrive/RNA3D_Benchmark/NuFold/runs/pilot10_single_20261018T203832Z/inputs",
+  "input_mode": "single_sequence_quick_reference",
+  "msa_depth": 1,
+  "inference_arguments": {
+    "single_seq_pred": "True",
+    "relax_steps": 1000,
+    "device": "cuda:0"
+  },
+  "primary_output": "relaxed_1000_model.pdb",
+  "run_root": "MyDrive/RNA3D_Benchmark/RhoFold/runs/rhofoldplus_pilot10_single_relax1000_20261111_v1",
+  "evaluation_id": "rhofoldplus_threeway_usalign20260527_20261112_v1",
+  "evaluation_protocol": {
+    "usalign_version": "20260527",
+    "usalign_source_commit": "177cc8a2bbd3e2a6e9c5faaaa4ff5dfa1e6048f7",
+    "command": "USalign <mapped_prediction> <native> -mol RNA -TMscore 1",
+    "normalization": "Structure_2 (experimental native)",
+    "mapping": "Observed native target positions only"
+  },
+  "saved_run_folder": "https://drive.google.com/drive/folders/10wciOg6wEfWC3AlSVtELXVaTV3-_Trkq",
+  "saved_evaluation_folder": "https://drive.google.com/drive/folders/1sh64qTiXvTE8puzOjHU1lTVpOkzkaj1X",
+  "notes": [
+    "Benchmark pilot only; do not interpret as the full MSA-based RhoFold+ method.",
+    "Inference uses only RNA sequences; native structures are scoring-only.",
+    "Runtimes include Amber 1000-step relaxation and are not controlled cross-model performance measurements."
+  ]
+}
