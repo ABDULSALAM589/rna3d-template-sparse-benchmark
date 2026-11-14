@@ -76,6 +76,10 @@ The resume-safe batch inference, evaluation, and Colab launcher are documented i
 
 NuFold, DRfold2, and **RhoFold+ (single-sequence quick-reference condition)** have **10/10 completed predictions and native-mapped structural scores** on the same pilot targets. The RhoFold+ evaluation also reproduces both earlier models' scores (10/10 calibrations each). For provenance, scored CSV snapshots and caveats see [the three-model pilot report](docs/RHOFOLDPLUS_PILOT10_THREE_MODEL_EVALUATION.md). This is **not** a finalized full-MSA or template-sparsity comparison.
 
+## Four-model exploratory pilot (November 2026)
+
+**NuFold, DRfold2, RhoFold+, and trRosettaRNA2** now have 10/10 predictions and native-mapped structural evaluations on the frozen pilot targets. trRosettaRNA2 used single-sequence A3Ms (depth 1); the four-model comparison is exploratory because input modes and native coordinate availability differ. See [the trRosettaRNA2 pilot report](docs/TRROSETTARNA2_PILOT10.md) and committed per-target score CSVs. **No template-sparsity or training-overlap clearance is inferred.**
+
 ## Benchmark Principles
 
 1. Experimental native 3D structures are used as evaluation ground truth only.
@@ -114,4 +118,4 @@ NuFold, DRfold2, and **RhoFold+ (single-sequence quick-reference condition)** ha
 
 ## Status
 
-**FYP-I exploratory execution phase — three models scored on ten pilot targets; template-sparsity controls, expanded cohort, and full-MSA conditions remain pending.**
+**FYP-I exploratory execution phase — four models scored on ten pilot targets; template-sparsity controls, expanded cohort, and full-MSA conditions remain pending.**

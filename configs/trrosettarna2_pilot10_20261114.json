@@ -1,0 +1,41 @@
+{
+  "experiment": "trrosettarna2_pilot10_single_20261114_v1",
+  "evaluation": "trrosettarna2_pilot10_fourmodel_eval_20261115_v1",
+  "status": "completed",
+  "targets": [
+    "8ubd_H",
+    "9fia_bJ",
+    "9cfn_B",
+    "9m31_B",
+    "9g4p_B",
+    "9lq7_K",
+    "8z8u_B",
+    "9g6k_lB",
+    "9cf2_W",
+    "8wf8_B"
+  ],
+  "model": "trRosettaRNA2",
+  "upstream_repository": "https://github.com/YangLab-SDU/trRosettaRNA2",
+  "upstream_commit": "d40a40e36617cb4004a11b0a7603167415ed9c52",
+  "input_mode": "single_sequence_a3m",
+  "msa_depth": 1,
+  "source_a3m": "MyDrive/RNA3D_Benchmark/NuFold/runs/pilot10_single_20261018T203832Z/inputs/{target_id}/{target_id}.a3m",
+  "prediction_filename": "model_1_relaxed200.pdb",
+  "output_directory": "MyDrive/RNA3D_Benchmark/trRosettaRNA2/runs/trrosettarna2_pilot10_single_20261114_v1",
+  "evaluation_directory": "MyDrive/RNA3D_Benchmark/Evaluations/trrosettarna2_pilot10_fourmodel_eval_20261115_v1",
+  "evaluation_protocol": "USalign <mapped_prediction> <native_eval.pdb> -mol RNA -TMscore 1; Structure_2 native normalization",
+  "usalign_tag": "20260527",
+  "usalign_source_commit": "177cc8a2bbd3e2a6e9c5faaaa4ff5dfa1e6048f7",
+  "mapping_helpers_commit": "c79a78b0a35be00a31aadeb04a6ebec5f2a0004f",
+  "predictions_pass": 10,
+  "evaluations_pass": 10,
+  "native_used_for_inference": false,
+  "github_writes_during_inference": false,
+  "artifact_policy": "Small CSV summaries and reproducible workflows in GitHub; raw PDBs, model weights and full logs on Google Drive.",
+  "limitations": [
+    "Exploratory ten-target comparison",
+    "Model input conditions differ",
+    "Native coordinate coverage varies by target",
+    "Training overlap and template scarcity have not been established"
+  ]
+}
