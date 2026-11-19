@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "target_count": 10,
+  "comparison": "exploratory six-model native-normalized US-align",
+  "source_previous": "results/tables/pilot10_five_model_paired.csv",
+  "source_rnabpflow": "MyDrive/RNA3D_Benchmark/RNAbpFlow/Evaluations/rnabpflow_pilot10_ipknot_usalign20260527_20261119_v1",
+  "rnabpflow_commit": "e8b1c077f7951d4d6ebe00c851d22c37777dfc9f",
+  "rnabpflow_checkpoint_sha256": "bb598a736193734541f63c59dae75d45db8c04f01a8414a758677367c4b1e213",
+  "usalign_version": "20260527",
+  "usalign_source_commit": "177cc8a2bbd3e2a6e9c5faaaa4ff5dfa1e6048f7",
+  "rnabpflow_conditioning": "frozen predicted IPKnot binary map, sample_id=0 only, no native base pairs",
+  "models": [
+    {
+      "model": "NuFold",
+      "mean_tm": 0.22283599999999998,
+      "mean_rmsd_angstrom": 18.337000000000003,
+      "tm_wins": 4
+    },
+    {
+      "model": "DRfold2",
+      "mean_tm": 0.23449400000000004,
+      "mean_rmsd_angstrom": 17.592999999999996,
+      "tm_wins": 2
+    },
+    {
+      "model": "RhoFold+",
+      "mean_tm": 0.18478999999999995,
+      "mean_rmsd_angstrom": 18.622,
+      "tm_wins": 1
+    },
+    {
+      "model": "trRosettaRNA2",
+      "mean_tm": 0.19177300000000003,
+      "mean_rmsd_angstrom": 17.570999999999998,
+      "tm_wins": 1
+    },
+    {
+      "model": "DRfold",
+      "mean_tm": 0.19366700000000003,
+      "mean_rmsd_angstrom": 18.583000000000002,
+      "tm_wins": 1
+    },
+    {
+      "model": "RNAbpFlow",
+      "mean_tm": 0.21425199999999997,
+      "mean_rmsd_angstrom": 18.020999999999997,
+      "tm_wins": 1
+    }
+  ],
+  "limitations": [
+    "Exploratory n=10",
+    "Different input conditions",
+    "RNAbpFlow one preselected sampled structure, not native-selected best-of-N",
+    "Some experimental native structures have missing coordinates",
+    "Template scarcity and training overlap not yet validated"
+  ]
+}

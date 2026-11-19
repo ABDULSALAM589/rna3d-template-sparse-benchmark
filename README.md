@@ -80,6 +80,10 @@ NuFold, DRfold2, and **RhoFold+ (single-sequence quick-reference condition)** ha
 
 **NuFold, DRfold2, RhoFold+, trRosettaRNA2, and original DRfold** now have 10/10 predictions and native-mapped structural evaluations on the frozen pilot targets. trRosettaRNA2 used single-sequence A3Ms (depth 1); the four-model comparison is exploratory because input modes and native coordinate availability differ. See [the DRfold five-model evaluation report](docs/DRFOLD_PILOT10_FIVE_MODEL_EVALUATION.md), [the trRosettaRNA2 pilot report](docs/TRROSETTARNA2_PILOT10.md), and committed per-target score CSVs. **No template-sparsity or training-overlap clearance is inferred.**
 
+## Six-model exploratory pilot (November 2026)
+
+**RNAbpFlow** completed 10/10 predicted-IPKnot-conditioned, single-sample predictions and native-mapped evaluations, completing six models × ten RNA targets. See [the RNAbpFlow six-model report](docs/RNABPFLOW_PILOT10_SIX_MODEL_EVALUATION.md) and [six-model paired CSV](results/tables/pilot10_six_model_paired.csv). The exploratory panel is **not** a controlled identical-input or leakage-cleared benchmark.
+
 ## Benchmark Principles
 
 1. Experimental native 3D structures are used as evaluation ground truth only.
@@ -118,4 +122,4 @@ NuFold, DRfold2, and **RhoFold+ (single-sequence quick-reference condition)** ha
 
 ## Status
 
-**FYP-I exploratory execution phase — five models scored on ten pilot targets; template-sparsity controls, expanded cohort, and full-MSA conditions remain pending.**
+**FYP-I exploratory execution phase — six models scored on ten pilot targets; template-sparsity controls, expanded cohort, and full-MSA conditions remain pending.**
