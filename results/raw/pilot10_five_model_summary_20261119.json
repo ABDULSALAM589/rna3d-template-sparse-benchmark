@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "n_targets": 10,
+  "source_drfold": "MyDrive/RNA3D_Benchmark/DRfold/Evaluations/drfold_pilot10_only_usalign20260527_20261119_v1",
+  "source_prior": "results/tables/pilot10_four_model_paired.csv",
+  "evaluation_method": "USalign 20260527 -mol RNA -TMscore 1, native-normalized; mapped to experimentally observed native residues",
+  "models": [
+    {
+      "model": "NuFold",
+      "mean_tm": 0.22283599999999998,
+      "mean_rmsd_angstrom": 18.337000000000003,
+      "tm_wins": 4
+    },
+    {
+      "model": "DRfold2",
+      "mean_tm": 0.23449400000000004,
+      "mean_rmsd_angstrom": 17.592999999999996,
+      "tm_wins": 2
+    },
+    {
+      "model": "RhoFold+",
+      "mean_tm": 0.18478999999999995,
+      "mean_rmsd_angstrom": 18.622,
+      "tm_wins": 1
+    },
+    {
+      "model": "trRosettaRNA2",
+      "mean_tm": 0.19177300000000003,
+      "mean_rmsd_angstrom": 17.570999999999998,
+      "tm_wins": 1
+    },
+    {
+      "model": "DRfold",
+      "mean_tm": 0.19366700000000003,
+      "mean_rmsd_angstrom": 18.583000000000002,
+      "tm_wins": 2
+    }
+  ],
+  "limitations": [
+    "Exploratory ten-target cohort; not a definitive model ranking",
+    "Training overlap and structural template scarcity not yet established",
+    "Model input conditions vary; two native structures have especially incomplete experimental residue coverage",
+    "All-atom lDDT/INF not evaluated; RMSD and TM-score cannot be interpreted interchangeably"
+  ]
+}
