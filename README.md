@@ -123,3 +123,8 @@ NuFold, DRfold2, and **RhoFold+ (single-sequence quick-reference condition)** ha
 ## Status
 
 **FYP-I exploratory execution phase — six models scored on ten pilot targets; template-sparsity controls, expanded cohort, and full-MSA conditions remain pending.**
+
+
+## Protenix Pilot10 and seven-model evaluation (2026-11-20)
+
+Protenix corrected RNA-only single-sequence inference passed 10/10 finite-coordinate checks, then native-mapped US-align v20260527 evaluation scored all ten targets (mean TM-score **0.21175**, mean RMSD **23.214 Å**). The original default-layernorm attempt generated invalid NaN geometry; valid results require `LAYERNORM_TYPE=torch` with conservative fp32/T4 settings. See [Protenix seven-model evaluation](docs/PROTENIX_PILOT10_SEVEN_MODEL_EVALUATION.md). Results are exploratory, input conditioning differs, and template scarcity/leakage checks remain pending.
